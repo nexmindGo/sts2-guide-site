@@ -1,58 +1,57 @@
 import type { Metadata } from 'next';
-import { Inspector } from 'react-dev-inspector';
+import { Inter, Oswald } from 'next/font/google';
 import './globals.css';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  variable: '--font-heading',
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
-  title: {
-    default: '新应用 | 扣子编程',
-    template: '%s | 扣子编程',
-  },
-  description:
-    '扣子编程是一款一站式云端 Vibe Coding 开发平台。通过对话轻松构建智能体、工作流和网站，实现从创意到上线的无缝衔接。',
+  title: 'Slay the Spire 2 Builds & Tier List | Necrobinder Guide',
+  description: 'Updated daily! Find the best Slay the Spire 2 builds, Necrobinder starter decks, and Early Access tier lists. Get your free strategy PDF now.',
   keywords: [
-    '扣子编程',
-    'Coze Code',
-    'Vibe Coding',
-    'AI 编程',
-    '智能体搭建',
-    '工作流搭建',
-    '网站搭建',
-    '网站部署',
-    '全栈开发',
-    'AI 工程师',
+    'Slay the Spire 2',
+    'STS2',
+    'Necrobinder',
+    'builds',
+    'tier list',
+    'deck guide',
+    'Early Access',
+    'strategy',
+    'tips',
+    'best decks',
   ],
-  authors: [{ name: 'Coze Code Team', url: 'https://code.coze.cn' }],
-  generator: 'Coze Code',
-  // icons: {
-  //   icon: '',
-  // },
+  authors: [{ name: 'Slay the Spire 2 Guide' }],
+  generator: 'Next.js',
   openGraph: {
-    title: '扣子编程 | 你的 AI 工程师已就位',
-    description:
-      '我正在使用扣子编程 Vibe Coding，让创意瞬间上线。告别拖拽，拥抱心流。',
-    url: 'https://code.coze.cn',
-    siteName: '扣子编程',
-    locale: 'zh_CN',
+    title: 'Slay the Spire 2 Builds & Tier List | Necrobinder Guide',
+    description: 'Updated daily! Find the best Slay the Spire 2 builds, Necrobinder starter decks, and Early Access tier lists. Get your free strategy PDF now.',
+    url: 'https://slaythespire2.me',
+    siteName: 'Slay the Spire 2 Guide',
+    locale: 'en_US',
     type: 'website',
-    // images: [
-    //   {
-    //     url: '',
-    //     width: 1200,
-    //     height: 630,
-    //     alt: '扣子编程 - 你的 AI 工程师',
-    //   },
-    // ],
   },
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title: 'Coze Code | Your AI Engineer is Here',
-  //   description:
-  //     'Build and deploy full-stack applications through AI conversation. No env setup, just flow.',
-  //   // images: [''],
-  // },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Slay the Spire 2 Builds & Tier List | Necrobinder Guide',
+    description: 'Updated daily! Find the best Slay the Spire 2 builds, Necrobinder starter decks, and Early Access tier lists.',
+  },
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: 'https://slaythespire2.me',
   },
 };
 
@@ -61,12 +60,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isDev = process.env.COZE_PROJECT_ENV === 'DEV';
-
   return (
-    <html lang="en">
-      <body className={`antialiased`}>
-        {isDev && <Inspector />}
+    <html lang="en" className={`${inter.variable} ${oswald.variable}`}>
+      <body className="antialiased bg-[#121212] text-[#f5f5f5]">
+        <GoogleAnalytics />
         {children}
       </body>
     </html>

@@ -2,8 +2,19 @@ import { Metadata } from 'next';
 import { Skull, Zap, Shield, Heart, CheckCircle, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Top 10 Necrobinder Tips | Free Strategy PDF',
-  description: 'Master the Necrobinder class with these essential tips for Slay the Spire 2 Early Access.',
+  title: 'Top 10 Necrobinder Tips | Free Strategy PDF | Slay the Spire 2 Guide',
+  description: 'Download our free Necrobinder strategy guide! Master poison synergy, block priority, campfire strategy, and more essential tips for Slay the Spire 2 Early Access.',
+  openGraph: {
+    title: 'Top 10 Necrobinder Tips | Free Strategy PDF',
+    description: 'Download our free Necrobinder strategy guide! Master poison synergy, block priority, campfire strategy, and more essential tips for Slay the Spire 2 Early Access.',
+    url: 'https://slaythespire2.me/pdf',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Top 10 Necrobinder Tips | Free Strategy PDF',
+    description: 'Download our free Necrobinder strategy guide for Slay the Spire 2 Early Access.',
+  },
 };
 
 export default function PDFPage() {
@@ -88,7 +99,7 @@ export default function PDFPage() {
                 <span className="text-xl font-bold text-green-600">{index + 1}</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{tip.title}</h3>
+                <h2 className="text-xl font-bold text-gray-900 mb-2">{tip.title}</h2>
                 <p className="text-gray-600 leading-relaxed">{tip.description}</p>
               </div>
             </div>

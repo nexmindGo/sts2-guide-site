@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Oswald } from 'next/font/google';
 import './globals.css';
 import { GoogleAnalytics } from '@/components/GoogleAnalytics';
+import JsonLd from '@/components/JsonLd';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -63,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${oswald.variable}`}>
       <body className="antialiased bg-[#121212] text-[#f5f5f5]">
+        <JsonLd />
         <GoogleAnalytics />
         {children}
       </body>

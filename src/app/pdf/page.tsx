@@ -1,21 +1,6 @@
-import { Metadata } from 'next';
-import { Skull, Zap, Shield, Heart, CheckCircle, ArrowRight } from 'lucide-react';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Top 10 Necrobinder Tips | Free Strategy PDF | Slay the Spire 2 Guide',
-  description: 'Download our free Necrobinder strategy guide! Master poison synergy, block priority, campfire strategy, and more essential tips for Slay the Spire 2 Early Access.',
-  openGraph: {
-    title: 'Top 10 Necrobinder Tips | Free Strategy PDF',
-    description: 'Download our free Necrobinder strategy guide! Master poison synergy, block priority, campfire strategy, and more essential tips for Slay the Spire 2 Early Access.',
-    url: 'https://slaythespire2.me/pdf',
-    type: 'article',
-  },
-  twitter: {
-    card: 'summary',
-    title: 'Top 10 Necrobinder Tips | Free Strategy PDF',
-    description: 'Download our free Necrobinder strategy guide for Slay the Spire 2 Early Access.',
-  },
-};
+import { Skull } from 'lucide-react';
 
 export default function PDFPage() {
   const tips = [

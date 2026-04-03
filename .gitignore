@@ -98,3 +98,6 @@ Desktop.ini
 .turbo
 
 .coze-logs
+
+# Non-standard directories
+assets/

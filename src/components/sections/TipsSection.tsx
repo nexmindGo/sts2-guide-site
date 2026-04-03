@@ -53,7 +53,7 @@ export function TipsSection() {
             <span className="text-sm text-green-400 font-medium">Quick Tips</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Beginner <span className="gradient-text">Tips & Mistakes</span>
+            How to <span className="gradient-text">Master Necrobinder:</span> Beginner Tips & Common Mistakes
           </h2>
           <p className="text-[#a3a3a3] max-w-2xl mx-auto text-lg">
             New to Slay the Spire 2? These quick tips will help you avoid common pitfalls 

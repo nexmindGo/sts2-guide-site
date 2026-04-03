@@ -18,9 +18,9 @@ export function HeroSection() {
 
         {/* Main Title */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-white">Slay the Spire 2</span>
+          Slay the Spire 2 <span className="text-white">Builds & Tier List:</span>
           <br />
-          <span className="gradient-text">Ultimate Early Access Guide</span>
+          <span className="gradient-text">Necrobinder Early Access Guide</span>
         </h1>
 
         {/* Subtitle */}

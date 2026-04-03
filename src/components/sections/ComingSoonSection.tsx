@@ -57,7 +57,7 @@ export function ComingSoonSection() {
             <span className="text-sm text-green-400 font-medium">More Coming</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Database <span className="gradient-text">Building in Progress</span>
+            More Content <span className="gradient-text">Coming Soon: Card Database & Boss Guides</span>
           </h2>
           <p className="text-[#a3a3a3] max-w-2xl mx-auto text-lg">
             We&apos;re working hard to bring you comprehensive guides for everything 
